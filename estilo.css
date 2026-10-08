@@ -337,3 +337,328 @@ footer {
     border: 3px solid #0F172A;
     font-weight: 800;
 }
+/* ==========================================
+   NAVEGACIÓN UNIFICADA & CORRECCIÓN DE RAYAS
+   ========================================== */
+
+/* Remueve bordes/pseudo-elementos indeseados */
+li, a {
+    border-left: none !important;
+    border-right: none !important;
+    text-decoration: none !important;
+}
+
+li::before, li::after, a::before, a::after {
+    display: none !important; /* Elimina las lineas negras parásitas */
+}
+
+/* Recuadro contenedor de navegación más amplio */
+.bloque-nav-unificado {
+    background-color: #FFFFFF;
+    border: 3px solid #0F172A;
+    border-radius: 18px;
+    box-shadow: 0.35em 0.35em #0F172A;
+    padding: 16px 24px; /* Mayor padding para dar presencia */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.nav-principales {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* BOTONES PRINCIPALES (MÁS GRANDES Y DESTACADOS) */
+.btn-principal {
+    display: inline-block;
+    background-color: #FFB703;
+    color: #0F172A;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem; /* Tamaño prominente */
+    padding: 10px 22px;
+    border-radius: 999px;
+    border: 2.5px solid #0F172A;
+    box-shadow: 0.15em 0.15em #0F172A;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-principal:hover {
+    transform: translateY(-2px);
+    box-shadow: 0.25em 0.25em #0F172A;
+}
+
+/* FILTROS (MÁS DISCRETOS Y EQUILIBRADOS EN LA ESQUINA) */
+.nav-filtros {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.label-filtros {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #64748B;
+    margin-right: 4px;
+}
+
+.btn-filtro {
+    display: inline-block;
+    background-color: #F1F5F9;
+    color: #0F172A;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.88rem;
+    padding: 7px 14px;
+    border-radius: 999px;
+    border: 2px solid #0F172A;
+    transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.btn-filtro:hover {
+    background-color: #FFB703;
+    transform: translateY(-1px);
+}
+
+/* ==========================================
+   ESTILOS DE CONTENIDO Y FICHAS
+   ========================================== */
+
+.contenedor-adopciones {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.bloque-seccion {
+    background-color: #FFFFFF;
+    padding: 24px 28px;
+    border-radius: 16px;
+    border: 3px solid #0F172A;
+    box-shadow: 0.3em 0.3em #0F172A;
+}
+
+.subtitulo-categoria {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.5rem;
+    color: #0F172A;
+    margin-top: 0;
+    margin-bottom: 8px;
+    border-bottom: 3px solid #FFB703;
+    display: inline-block;
+}
+
+.texto-bajada {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #475569;
+    font-size: 0.95rem;
+}
+
+.grid-mascotas {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+/* CREDENCIALES PAEC DE MASCOTAS */
+.credencial-paec {
+    background-color: #1E293B;
+    color: #FFFFFF;
+    border: 3px solid #0F172A;
+    border-radius: 16px;
+    box-shadow: 0.3em 0.3em #0F172A;
+    flex: 1 1 250px;
+    max-width: 295px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.credencial-paec:hover {
+    transform: translateY(-4px);
+    box-shadow: 0.45em 0.45em #0F172A;
+}
+
+.credencial-header {
+    background-color: #0F172A;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #334155;
+}
+
+.expediente-id {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #FFB703;
+}
+
+.badge-status {
+    font-size: 0.7rem;
+    font-weight: 800;
+    padding: 2px 8px;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+.badge-status.urgente {
+    background-color: #EF4444;
+    color: #FFFFFF;
+}
+
+.badge-status.disponible {
+    background-color: #10B981;
+    color: #FFFFFF;
+}
+
+.contenedor-foto-mascota {
+    position: relative;
+    width: 100%;
+    height: 175px;
+    overflow: hidden;
+}
+
+.img-credencial {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badges-flotantes {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.badge-flotante {
+    background-color: rgba(15, 23, 42, 0.85);
+    color: #FFB703;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 6px;
+    border: 1px solid #FFB703;
+}
+
+.credencial-body {
+    padding: 14px;
+}
+
+.credencial-body h4 {
+    font-family: 'Fredoka', sans-serif;
+    color: #FFB703;
+    font-size: 1.3rem;
+    margin: 0 0 10px 0;
+}
+
+.ficha-tecnica {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    background-color: #0F172A;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    color: #E2E8F0;
+    border: 1px solid #334155;
+}
+
+.ficha-tecnica span {
+    color: #FFB703;
+    font-weight: 700;
+}
+
+/* BLOQUE INFERIOR: LAYOUT EN DOS COLUMNAS */
+.bloque-inferior-grid {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.columna-pasos {
+    flex: 2 1 320px;
+}
+
+.lista-pasos {
+    color: #334155;
+    line-height: 1.7;
+    font-weight: 500;
+    padding-left: 18px;
+    margin: 10px 0 0 0;
+}
+
+.columna-meta {
+    flex: 1 1 240px;
+    background-color: #F8FAFC;
+    border: 2px solid #0F172A;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.meta-header-compacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subtitulo-meta {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    color: #0F172A;
+    font-size: 1.1rem;
+}
+
+.badge-meta {
+    background-color: #FFB703;
+    color: #0F172A;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1.5px solid #0F172A;
+    font-size: 0.85rem;
+}
+
+.texto-meta-mini {
+    font-size: 0.8rem;
+    color: #64748B;
+    margin: 6px 0 10px 0;
+}
+
+.barra-progreso-fondo {
+    width: 100%;
+    height: 14px;
+    background-color: #E2E8F0;
+    border-radius: 999px;
+    border: 1.5px solid #0F172A;
+    overflow: hidden;
+}
+
+.barra-progreso-relleno {
+    width: 53%;
+    height: 100%;
+    background-color: #FFB703;
+    border-radius: 999px;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 75%, transparent 75%, transparent);
+    background-size: 16px 16px;
+}

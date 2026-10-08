@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopciones 🐾 Huellitas Comunitarias</title>
+    <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Rubik:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="bloque-header">
+        <div>
+            <h1 class="titulo-robusto">🐾 Huellitas Comunitarias</h1>
+            <p class="subtitulo">Unidos por el bienestar animal • Proyecto PAEC</p>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=200" alt="Logo Huellitas Comunitarias" class="logo-img">
+        </div>
+    </header>
+
+    <!-- NAVEGACIÓN UNIFICADA CON FILTROS -->
+    <nav class="bloque-nav-unificado">
+        <!-- Lado Izquierdo: Botones Principales -->
+        <ul class="nav-principales">
+            <li><a href="index.html" class="btn-principal btn-activo">Inicio</a></li>
+            <li><a href="adopciones.html" class="btn-principal">Adopciones</a></li>
+            <li><a href="donaciones.html" class="btn-principal">Donaciones</a></li>
+        </ul>
+
+        <!-- Lado Derecho: Filtros del Centro de Adopciones -->
+        <div class="nav-filtros">
+            <span class="label-filtros">Filtrar por:</span>
+            <a href="#destacados" class="btn-filtro">⭐ Urgentes (2)</a>
+            <a href="#perros" class="btn-filtro">🐶 Perros (4)</a>
+            <a href="#gatos" class="btn-filtro">🐱 Gatos (3)</a>
+        </div>
+    </nav>
+
+    <!-- CONTENEDOR DE ADOPCIONES -->
+    <main class="contenedor-adopciones">
+
+        <!-- SECCIÓN 1: MASCOTAS DESTACADAS -->
+        <section id="destacados" class="bloque-seccion">
+            <h3 class="subtitulo-categoria">⭐ Casos Destacados / Adopción Urgente</h3>
+            <p class="texto-bajada">Mascotas que necesitan un hogar de manera prioritaria.</p>
+            
+            <div class="grid-mascotas">
+                <article class="credencial-paec">
+                    <div class="credencial-header">
+                        <span class="expediente-id">EXP: PAEC-2026-01</span>
+                        <span class="badge-status urgente">Urgente 🚨</span>
+                    </div>
+                    <div class="contenedor-foto-mascota">
+                        <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&q=80&w=500" alt="Rocky" class="img-credencial">
+                        <div class="badges-flotantes">
+                            <span class="badge-flotante">💉 Vacunado</span>
+                            <span class="badge-flotante">✂️ Esterilizado</span>
+                        </div>
+                    </div>
+                    <div class="credencial-body">
+                        <h4>Rocky 🐾</h4>
+                        <div class="ficha-tecnica">
+                            <div><span>Especie:</span> Perro</div>
+                            <div><span>Edad:</span> 2 Años</div>
+                            <div><span>Tamaño:</span> Mediano</div>
+                            <div><span>Carácter:</span> Sociable</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="credencial-paec">
+                    <div class="credencial-header">
+                        <span class="expediente-id">EXP: PAEC-2026-02</span>
+                        <span class="badge-status urgente">Urgente 🚨</span>
+                    </div>
+                    <div class="contenedor-foto-mascota">
+                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&q=80&w=500" alt="Miso" class="img-credencial">
+                        <div class="badges-flotantes">
+                            <span class="badge-flotante">🏢 Apto Depa</span>
+                            <span class="badge-flotante">✂️ Esterilizado</span>
+                        </div>
+                    </div>
+                    <div class="credencial-body">
+                        <h4>Miso 🐱</h4>
+                        <div class="ficha-tecnica">
+                            <div><span>Especie:</span> Gato</div>
+                            <div><span>Edad:</span> 1 Año</div>
+                            <div><span>Tamaño:</span> Pequeño</div>
+                            <div><span>Carácter:</span> Tranquilo</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: PERROS EN ADOPCIÓN -->
+        <section id="perros" class="bloque-seccion">
+            <h3 class="subtitulo-categoria">🐶 Perros en Busca de Hogar</h3>
+            
+            <div class="grid-mascotas">
+                <article class="credencial-paec">
+                    <div class="credencial-header">
+                        <span class="expediente-id">EXP: PAEC-2026-03</span>
+                        <span class="badge-status disponible">Disponible</span>
+                    </div>
+                    <div class="contenedor-foto-mascota">
+                        <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&q=80&w=500" alt="Luna" class="img-credencial">
+                        <div class="badges-flotantes">
+                            <span class="badge-flotante">👶 Apto Niños</span>
+                        </div>
+                    </div>
+                    <div class="credencial-body">
+                        <h4>Luna 🐾</h4>
+                        <div class="ficha-tecnica">
+                            <div><span>Raza:</span> Beagle Mix</div>
+                            <div><span>Edad:</span> 8 Meses</div>
+                            <div><span>Tamaño:</span> Mediana</div>
+                            <div><span>Carácter:</span> Dulce</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="credencial-paec">
+                    <div class="credencial-header">
+                        <span class="expediente-id">EXP: PAEC-2026-04</span>
+                        <span class="badge-status disponible">Disponible</span>
+                    </div>
+                    <div class="contenedor-foto-mascota">
+                        <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=500" alt="Toby" class="img-credencial">
+                        <div class="badges-flotantes">
+                            <span class="badge-flotante">🎾 Guardián</span>
+                        </div>
+                    </div>
+                    <div class="credencial-body">
+                        <h4>Toby 🐾</h4>
+                        <div class="ficha-tecnica">
+                            <div><span>Raza:</span> Labrador Mix</div>
+                            <div><span>Edad:</span> 3 Años</div>
+                            <div><span>Tamaño:</span> Grande</div>
+                            <div><span>Carácter:</span> Leal</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="credencial-paec">
+                    <div class="credencial-header">
+                        <span class="expediente-id">EXP: PAEC-2026-05</span>
+                        <span class="badge-status disponible">Disponible</span>
+                    </div>
+                    <div class="contenedor-foto-mascota">
+                        <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=500" alt="Max" class="img-credencial">
+                        <div class="badges-flotantes">
+                            <span class="badge-flotante">⚡ Energético</span>
+                        </div>
+                    </div>
+                    <div class="credencial-body">
+                        <h4>Max 🐾</h4>
+                        <div class="ficha-tecnica">
+                            <div><span>Raza:</span> Mestizo</div>
+                            <div><span>Edad:</span> 1 Año</div>
+                            <div><span>Tamaño:</span> Mediano</div>
+                            <div><span>Carácter:</span> Activo</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="credencial-paec">
+                    <div class="credencial-header">
+                        <span class="expediente-id">EXP: PAEC-2026-06</span>
+                        <span class="badge-status disponible">Disponible</span>
+                    </div>
+                    <div class="contenedor-foto-mascota">
+                        <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=500" alt="Bruno" class="img-credencial">
+                        <div class="badges-flotantes">
+                            <span class="badge-flotante">💤 Dormilón</span>
+                        </div>
+                    </div>
+                    <div class="credencial-body">
+                        <h4>Bruno 🐾</h4>
+                        <div class="ficha-tecnica">
+                            <div><span>Raza:</span> Pug Mix</div>
+                            <div><span>Edad:</span> 4 Años</div>
+                            <div><span>Tamaño:</span> Pequeño</div>
+                            <div><span>Carácter:</span> Dócil</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: GATOS EN ADOPCIÓN -->
+        <section id="gatos" class="bloque-seccion">
+            <h3 class="subtitulo-categoria">🐱 Gatos en Busca de Hogar</h3>
+            
+            <div class="grid-mascotas">
+                <article class="credencial-paec">
+                    <div class="credencial-header">
+                        <span class="expediente-id">EXP: PAEC-2026-07</span>
+                        <span class="badge-status disponible">Disponible</span>
+                    </div>
+                    <div class="contenedor-foto-mascota">
+                        <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&q=80&w=500" alt="Simba" class="img-credencial">
+                        <div class="badges-flotantes">
+                            <span class="badge-flotante">☀️ Tranquilo</span>
+                        </div>
+                    </div>
+                    <div class="credencial-body">
+                        <h4>Simba 🐱</h4>
+                        <div class="ficha-tecnica">
+                            <div><span>Raza:</span> Mestizo</div>
+                            <div><span>Edad:</span> 3 Años</div>
+                            <div><span>Tamaño:</span> Mediano</div>
+                            <div><span>Carácter:</span> Noble</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="credencial-paec">
+                    <div class="credencial-header">
+                        <span class="expediente-id">EXP: PAEC-2026-08</span>
+                        <span class="badge-status disponible">Disponible</span>
+                    </div>
+                    <div class="contenedor-foto-mascota">
+                        <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&q=80&w=500" alt="Pelusa" class="img-credencial">
+                        <div class="badges-flotantes">
+                            <span class="badge-flotante">🧶 Curiosa</span>
+                        </div>
+                    </div>
+                    <div class="credencial-body">
+                        <h4>Pelusa 🐱</h4>
+                        <div class="ficha-tecnica">
+                            <div><span>Raza:</span> Angora Mix</div>
+                            <div><span>Edad:</span> 2 Años</div>
+                            <div><span>Tamaño:</span> Pequeña</div>
+                            <div><span>Carácter:</span> Cariñosa</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="credencial-paec">
+                    <div class="credencial-header">
+                        <span class="expediente-id">EXP: PAEC-2026-09</span>
+                        <span class="badge-status disponible">Disponible</span>
+                    </div>
+                    <div class="contenedor-foto-mascota">
+                        <img src="https://images.unsplash.com/photo-1561948955-570b270e7c36?auto=format&fit=crop&q=80&w=500" alt="Oliver" class="img-credencial">
+                        <div class="badges-flotantes">
+                            <span class="badge-flotante">🐾 Cachorro</span>
+                        </div>
+                    </div>
+                    <div class="credencial-body">
+                        <h4>Oliver 🐱</h4>
+                        <div class="ficha-tecnica">
+                            <div><span>Raza:</span> Atigrado</div>
+                            <div><span>Edad:</span> 6 Meses</div>
+                            <div><span>Tamaño:</span> Pequeño</div>
+                            <div><span>Carácter:</span> Juguetón</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- BLOQUE INFERIOR: PASOS DE ADOPCIÓN + META PAEC COMPACTA -->
+        <section class="bloque-seccion bloque-inferior-grid">
+            <div class="columna-pasos">
+                <h3 class="subtitulo-categoria">📋 Pasos Rápidos de Adopción PAEC</h3>
+                <ul class="lista-pasos">
+                    <li>1. Selecciona la credencial de la mascota de tu interés.</li>
+                    <li>2. Cumple con los requisitos básicos (Identificación y comprobante).</li>
+                    <li>3. Realiza una breve entrevista en el módulo escolar PAEC.</li>
+                    <li>4. Firma el compromiso de adopción y seguimiento.</li>
+                </ul>
+            </div>
+
+            <div class="columna-meta">
+                <div class="meta-header-compacto">
+                    <span class="subtitulo-meta">🎯 Meta PAEC 2026</span>
+                    <span class="badge-meta">8 / 15 🐾</span>
+                </div>
+                <p class="texto-meta-mini">Progreso de reubicación escolar de este ciclo.</p>
+                <div class="barra-progreso-fondo">
+                    <div class="barra-progreso-relleno"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>© 2026 Huellitas Comunitarias — Proyecto PAEC. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
