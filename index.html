@@ -4,120 +4,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Huellitas Comunitarias - Inicio</title>
-    <!-- Tipografía Fredoka y Plus Jakarta Sans -->
+    <!-- Tipografías del proyecto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Plus+Jakarta+Sans:wght@500;700&family=Rubik:wght@700&display=swap" rel="stylesheet">
-    <!-- Hoja de estilos externa -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Plus+Jakarta+Sans:wght@500;700;800&family=Rubik:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 
-    <!-- ENCABEZADO SUPERIOR -->
+    <!-- RECUADRO SUPERIOR 1: ENCABEZADO -->
     <header class="bloque-header">
         <div class="header-info">
+            <span class="tag-paec">PROYECTO ESCOLAR PAEC 2026</span>
             <h1 class="titulo-robusto">🐾 Huellitas Comunitarias</h1>
-            <p class="subtitulo">Unidos por el bienestar animal · Proyecto PAEC</p>
+            <p class="subtitulo">Transformando huellitas con el esfuerzo de nuestro plantel</p>
         </div>
         <div class="header-logo">
-            <img src="img/logo.jpg" alt="Logo Huellitas Comunitarias" class="logo-img">
+            <img src="img/logo.jpg" alt="huellitas.jpg" class="logo-img">
         </div>
     </header>
 
-    <!-- NAVEGACIÓN INDEPENDIENTE -->
+    <!-- RECUADRO SUPERIOR 2: NAVEGACIÓN INDEPENDIENTE -->
     <nav class="bloque-nav">
-        <ul>
-            <li>
-                <a href="index.html">
-                    <button class="button">
-                        <div><span>Inicio</span></div>
-                    </button>
-                </a>
-            </li>
-            <li>
-                <a href="adopciones.html">
-                    <button class="button">
-                        <div><span>Adopciones</span></div>
-                    </button>
-                </a>
-            </li>
-            <li>
-                <a href="donaciones.html">
-                    <button class="button">
-                        <div><span>Donaciones</span></div>
-                    </button>
-                </a>
-            </li>
-        </ul>
+        <div class="nav-botones">
+            <a href="index.html">
+                <button class="button active">
+                    <div><span>Inicio 🐾</span></div>
+                </button>
+            </a>
+            <a href="adopciones.html">
+                <button class="button">
+                    <div><span>Adopciones 🐶</span></div>
+                </button>
+            </a>
+            <a href="donaciones.html">
+                <button class="button">
+                    <div><span>Donaciones 📦</span></div>
+                </button>
+            </a>
+        </div>
+        <div class="estado-acopio">
+            <span class="label-acopio">Estado del Acopio:</span>
+            <span class="badge-status">● RECEPCIÓN ACTIVA</span>
+        </div>
     </nav>
 
-    <!-- CONTENIDO PRINCIPAL A TODO ANCHO -->
-    <main class="contenedor-principal">
-        
-        <!-- PANEL LATERAL -->
-        <aside class="panel-lateral">
-            <h2 class="subtitulo-lateral">PROYECTO PAEC</h2>
-            <p>Iniciativa escolar dedicada a la protección, rescate digno y concientización sobre el bienestar animal.</p>
-            
-            <hr class="linea-divisora">
+    <!-- CONTENIDO PRINCIPAL IMPRESIONANTE -->
+    <main class="contenedor-principal-stack">
 
-            <p class="etiqueta-destacada">Especialidad</p>
-            <p>Adopción Responsable · Rescate · Educación</p>
-            
-            <p class="etiqueta-destacada">Área de Impacto</p>
-            <p>Comunidad Escolar y Refugios Locales</p>
+        <!-- BANNER HERO DE BIENVENIDA Y IMPACTO -->
+        <section class="bloque-hero">
+            <div class="hero-texto">
+                <h2>Uniendo Manos y Patitas por una Vida Digna 💛</h2>
+                <p>
+                    Somos un proyecto escolar enfocado en la rescate, esterilización, acopio de alimentos y concientización comunitaria. Cada pequeña acción dentro de nuestro plantel cuenta para transformar la vida de decenas de perritos y gatitos.
+                </p>
+                <div class="hero-acciones">
+                    <a href="adopciones.html" class="btn-hero-primary">Conoce a los Rescatados</a>
+                    <a href="donaciones.html" class="btn-hero-secondary">Ver Insumos Requeridos</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <span class="stat-numero">+185 KG</span>
+                    <span class="stat-label">Alimento Recolectado</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-numero">12</span>
+                    <span class="stat-label">Mascotas Readoptadas</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-numero">100%</span>
+                    <span class="stat-label">Compromiso Escolar</span>
+                </div>
+            </div>
+        </section>
 
-            <p class="etiqueta-destacada">Estado del Proyecto</p>
-            <p>Activo · Colecta Abierta 2026</p>
-        </aside>
+        <!-- SECCIÓN DE PILARES DE ACCIÓN -->
+        <section class="bloque-seccion-blanca">
+            <div class="encabezado-seccion">
+                <h2 class="titulo-seccion">🌟 Nuestros Pilares de Acción</h2>
+                <p class="subtitulo-seccion">Estrategias comunitarias impulsadas por estudiantes y docentes</p>
+            </div>
 
-        <!-- PANEL DE CONTENIDO -->
-        <section class="panel-contenido">
-            <h2 class="titulo-seccion">Compromiso y Dignidad Animal</h2>
-            <p>
-                En <strong>Huellitas Comunitarias</strong> transformamos la realidad de perros y gatos en situación de calle o abandono. Nuestro proyecto no solo busca brindar alimento temporal, sino estructurar un modelo sostenible de apoyo integral que garantice atención médica, refugio seguro y una adopción definitiva.
-            </p>
-            <p>
-                Como parte del <strong>Proyecto Aula Escolar Comunitaria (PAEC)</strong>, articulamos esfuerzos entre estudiantes, docentes y familias para generar un impacto directo y medible en nuestra comunidad.
-            </p>
-
-            <h2 class="titulo-seccion">Nuestros Pilares de Acción</h2>
-            
-            <!-- TARJETAS UIVERSE.IO -->
             <div class="grid-pilares">
                 <div class="card">
                     <div class="card2">
+                        <div class="card-icon">🏥</div>
                         <h3>1. Rescate y Salud</h3>
-                        <p>Coordinación con veterinarias locales para vacunación y esterilización.</p>
+                        <p>Atención médica básica, vacunación y canalización para esterilización de mascotas en condición vulnerable.</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card2">
-                        <h3>2. Temporalidad</h3>
-                        <p>Red de voluntariado escolar para resguardo seguro pre-adopción.</p>
+                        <div class="card-icon">🏠</div>
+                        <h3>2. Hogares Temporales</h3>
+                        <p>Red de resguardo seguro con brigadas escolares antes de su adopción definitiva.</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card2">
-                        <h3>3. Educación</h3>
-                        <p>Campañas contra el maltrato animal y la tenencia irresponsable.</p>
+                        <div class="card-icon">📣</div>
+                        <h3>3. Concientización</h3>
+                        <p>Pláticas, eventos y colectas constantes dentro y fuera de nuestro plantel educativo.</p>
                     </div>
                 </div>
             </div>
-
-            <h2 class="titulo-seccion">¿Cómo puedes colaborar?</h2>
-            <p>
-                Puedes sumarte adoptando a un nuevo integrante, donando insumos esenciales en nuestro centro de acopio o compartiendo las fichas de adopción.
-            </p>
         </section>
+
+        <!-- DOS COLUMNAS DE ACCIÓN RÁPIDA -->
+        <div class="grid-dos-columnas">
+            
+            <article class="panel-oscuro-banner">
+                <span class="badge-destacado">ADOPCIÓN PRIORITARIA</span>
+                <h3>¿Buscas un nuevo integrante para tu hogar?</h3>
+                <p>Nuestros rescatados pasan por un protocolo de salud completo antes de integrarse a tu familia. ¡Dale una oportunidad a quien más lo necesita!</p>
+                <a href="adopciones.html" class="btn-banner-link">Ver catálogo de adopción →</a>
+            </article>
+
+            <article class="panel-blanco-banner">
+                <span class="badge-destacado-alt">CENTRO DE ACOPIO</span>
+                <h3>¿Quieres apoyar con alimento o insumos?</h3>
+                <p>Recibimos croquetas, sobres, cobijitas y artículos de higiene en el módulo de tutorías del colegio de lunes a viernes.</p>
+                <a href="donaciones.html" class="btn-banner-link-alt">Ver centro de acopio →</a>
+            </article>
+
+        </div>
 
     </main>
 
     <!-- PIE DE PÁGINA -->
     <footer>
-        <p>HUELLITAS COMUNITARIAS | PROYECTO PAEC 2026</p>
+        <p>HUELLITAS COMUNITARIAS | PROYECTO PAEC 2026 · JUNTO A NUESTRA COMUNIDAD</p>
     </footer>
 
 </body>
